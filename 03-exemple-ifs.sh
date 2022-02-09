@@ -5,8 +5,22 @@
 # $ prog edat
 #-------------------------------
 # 1) Validem arguments
-if [ condició ]
+
+if [ $# -ne 1 ]
 then
-   accions
+   echo "Error: numero d'arguments incorrecte"
+   echo "Usage : $0 edat"
+   exit 1
 fi
+
+#2) Xixa
+edat=$1
+if [ $edat -ge 18 ]
+then
+   echo "edat $edat és major d'edat"
+else
+   echo "edat $edat és menor d'edat"
+fi
+exit 0
+
 
