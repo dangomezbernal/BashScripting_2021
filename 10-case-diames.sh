@@ -39,4 +39,4 @@ case "$mes" in
          *)
         dies=30
 echo "el mes té $dies dies"
-
+exit 0
